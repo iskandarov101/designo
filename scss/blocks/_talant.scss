@@ -1,0 +1,69 @@
+.about-hero--talent {
+  padding-bottom: 80px;
+}
+.talant--wrapper {
+  flex-direction: row-reverse;
+  background-image: url("../img/intro-bg.png"), url("../img/intro-bg.png");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 197px) bottom, calc(100% - 197px - 292px) bottom;
+  background-size: 292px;
+  background-color: #FDF3F0;
+}
+.talant--wrapper .about-hero__img {
+  border-radius: 15px 0 0 15px;
+}
+.talant--wrapper .about-hero__box {
+  padding-top: 154px;
+  padding-bottom: 154px;
+}
+.talant--wrapper .about-hero__title {
+  color: #E7816B;
+}
+.talant--wrapper .about-hero__text {
+  color: $text-color;
+}
+.talant--wrapper .about-hero__text--first {
+  margin-bottom: 24px;
+}
+
+
+@include breakpoint-down (950) {
+  .talant--wrapper {
+    flex-direction: column;
+  }
+  .talant--wrapper .about-hero__box {
+    padding-top: 68px;
+    padding-bottom: 68px;
+  }
+  .talant--wrapper .about-hero__img {
+    border-radius: 15px 15px 0 0;
+    height: 320px;
+    object-fit: cover;
+    object-position: 0 -350px;
+  }
+}
+@include breakpoint-down (600) {
+  .about-hero--talent .about-hero__img{
+    object-position: 0 -230px;
+    border-radius: 0;
+  }
+  .talant--wrapper .about-hero__box {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .talant--wrapper {
+    padding-bottom: 60px;
+  }
+}
+@include breakpoint-down (400) {
+  .about-hero--talent .about-hero__img{
+    object-position: 0 -100px;
+    border-radius: 0;
+    height: 100%;
+  }
+}
+@include breakpoint-down (330) {
+  .about-hero--talent .about-hero__img{
+    object-position: 0 -60px;
+  }
+}

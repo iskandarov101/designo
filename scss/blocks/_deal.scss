@@ -1,0 +1,37 @@
+.about-hero--deal {
+  padding: 80px 0;
+}
+.deal--wrapper {
+  background-image: url("../img/intro-bg.png"), url("../img/intro-bg.png");
+  background-repeat: no-repeat;
+  background-position: left bottom, 292px bottom;
+  background-size: 292px;
+  background-color: #FDF3F0;
+}
+.deal--wrapper .about-hero__box {
+  padding-top: 154px;
+  padding-bottom: 154px;
+}
+.deal--wrapper .about-hero__title {
+  color: #E7816B;
+}
+.deal--wrapper .about-hero__text {
+  color: $text-color;
+}
+
+
+@include breakpoint-down (950) {
+  .deal--wrapper .about-hero__box {
+    padding-top: 68px;
+    padding-bottom: 68px;
+  }
+}
+@include breakpoint-down (600) {
+  .deal--wrapper .about-hero__box {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .about-hero--deal {
+    padding: 60px 0;
+  }
+}

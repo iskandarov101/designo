@@ -1,0 +1,60 @@
+.design-hero {
+  padding-bottom: 80px;
+}
+
+.design-hero__wrapper {
+  padding: 64px 24px;
+  text-align: center;
+  background-image: url("../img/intro-bg.png"), url("../img/intro-bg.png"),
+  url("../img/intro-bg.png"), url("../img/intro-bg.png"), url("../img/intro-bg.png");
+  background-repeat: no-repeat;
+  background-position: right 146px, right -146px, calc(100% - 292px) 146px, calc(100% - 292px) -146px, calc(100% - 594px) -146px;
+  background-color: #E7816B;
+  border-radius: 15px;
+}
+.design-hero__title {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 48px;
+  margin-bottom: 24px;
+  color: #fff;
+}
+.design-hero__text {
+  font-size: 16px;
+  line-height: 26px;
+  color: #fff;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+@include breakpoint-down (600) {
+  .design-hero__container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .design-hero__wrapper {
+    padding: 105px 24px;
+    border-radius: 0;
+  }
+  .design-hero__title {
+    font-size: 32px;
+    line-height: 36px;
+  }
+  .design-hero__text {
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+@include breakpoint-down (500) {
+  .design-hero__wrapper {
+    background-position: right top, -500px -500px, -500px -500px, -500px -500px, -500px -500px;
+  }
+  .design-hero {
+    padding-bottom: 60px;
+  }
+}
+@include breakpoint-down (370) {
+  .design-hero__wrapper {
+    padding-bottom: 105px 20px;
+  }
+}

@@ -1,0 +1,212 @@
+.contact {
+  padding-bottom: 80px;
+  overflow: hidden;
+}
+.contact__wrapper {
+  padding: 55px 95px;
+  background-color: #E7816B;
+  border-radius: 15px;
+  background-image: url("../img/hero-bg.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 640px;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: space-between;
+  overflow-y: hidden;
+  position: relative;
+}
+.contact__box {
+  max-width: 445px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact__title {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 48px;
+  color: #FFFFFF;
+  margin-bottom: 32px;
+}
+.contact__text {
+  font-size: 16px;
+  line-height: 26px;
+  color: #FFFFFF;
+  max-width: 446px;
+  margin-bottom: 40px;
+}
+.contact__form {
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  // position: relative;
+}
+.form__input {
+  width: 100%;
+  border: 0;
+  background-color: transparent;
+  color: #fff;
+  outline: 0;
+  padding: 14px 16px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 26px;
+  margin-bottom: 7px;
+  box-shadow: 0 1px 0 0 #fff;
+  &:focus {
+    box-shadow: 0 2px 0 0 #fff;
+  }
+}
+
+
+
+.form__input::-webkit-input-placeholder {
+  color:    #fff;
+  opacity: 0.5;
+}
+.form__input:-moz-placeholder {
+  color:    #fff;
+  opacity: 0.5;
+}
+.form__input::-moz-placeholder {
+  color:    #fff;
+  opacity: 0.5;
+}
+.form__input:-ms-input-placeholder {
+  color:    #fff;
+  opacity: 0.5;
+}
+.form__message::-webkit-input-placeholder {
+  color:    #fff;
+  opacity: 0.5;
+}
+.form__message:-moz-placeholder {
+  color:    #fff;
+  opacity: 0.5;
+}
+.form__message::-moz-placeholder {
+  color:    #fff;
+  opacity: 0.5;
+}
+.form__message:-ms-input-placeholder {
+  color:    #fff;
+  opacity: 0.5;
+}
+
+// .error-massage {
+  //   position: absolute;
+  //   top: 75px;
+  //   right: 0;
+  //   display: none;
+  //   align-items: center;
+  //   font-style: italic;
+  //   font-weight: normal;
+  //   font-size: 12px;
+  //   line-height: 26px;
+  //   color: #fff;
+  //   &::after {
+    //     content: "";
+    //     display: inline-block;
+    //     width: 20px;
+    //     height: 20px;
+    //     top: 0;
+    //     left: 0;
+    //     background-image: url("../img/error-email.svg");
+    //     background-repeat: no-repeat;
+    //     background-size: contain;
+    //     margin-left: 15px;
+    //   }
+    // }
+    .form__input--email:not(:placeholder-shown):invalid + .error-message {
+      display: flex;
+    }
+    .form__input--phone {
+      margin-bottom: 11px;
+    }
+    .form__message {
+      width: 100%;
+      border: 0;
+      background-color: transparent;
+      color: #fff;
+      outline: 0;
+      padding: 14px 16px 75px;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 26px;
+      margin-bottom: 24px;
+      resize: none;
+      box-shadow: 0 1px 0 0 #fff;
+      &:focus {
+        box-shadow: 0 2px 0 0 #fff;
+      }
+    }
+    .form__btn {
+      border: 0;
+      outline: 0;
+      display: inline-block;
+      padding: 16px 24px;
+      color: $text-color;
+      background-color: #fff;
+      border-radius: 8px;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 22px;
+      margin-left: auto;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      transition: color 0.3s ease, background-color 0.3s ease;
+      &:hover {
+        background-color: #FFAD9B;
+        color: #fff;
+      }
+    }
+
+    @include breakpoint-down(900) {
+      .contact__wrapper {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 71px 58px;
+      }
+      .contact__text {
+        max-width: 100%;
+      }
+      .contact__title {
+        margin-bottom: 24px;
+      }
+      .contact__box {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 40px;
+      }
+      .contact__form {
+        width: 100%;
+      }
+    }
+    @include breakpoint-down(600) {
+      .contact {
+        padding-bottom: 60px;
+      }
+      .contact__container {
+        padding-left: 0;
+        padding-right: 0;
+      }
+      .contact__wrapper {
+        padding: 72px 24px;
+        border-radius: 0;
+      }
+      .contact__box {
+        text-align: center;
+        margin-bottom: 48px;
+      }
+      .contact__title {
+        font-size: 32px;
+        line-height: 36px;
+      }
+      .contact__text {
+        font-size: 15px;
+        line-height: 25px;
+      }
+    }

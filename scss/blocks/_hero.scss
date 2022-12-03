@@ -1,0 +1,113 @@
+.hero {
+  padding-bottom: 80px;
+}
+.hero__wrapper {
+  padding: 145px 95px;
+  background-color: #E7816B;
+  border-radius: 15px;
+  background-image: url("../img/hero-bg.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 640px;
+  background-attachment: fixed;
+  display: flex;
+  overflow-y: hidden;
+  position: relative;
+}
+.hero__box {
+  max-width: 540px;
+}
+.hero__title {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 48px;
+  color: #FFFFFF;
+  margin-bottom: 11px;
+}
+.hero__text {
+  font-size: 16px;
+  line-height: 26px;
+  color: #FFFFFF;
+  max-width: 446px;
+  margin-bottom: 40px;
+}
+.hero__link {
+  display: inline-block;
+  padding: 16px 24px;
+  color: $text-color;
+  background-color: #fff;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  &:hover {
+    background-color: #FFAD9B;
+    color: #fff;
+  }
+}
+.hero__img {
+  width: 284px;
+  object-fit: contain;
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateY(100px);
+  position: absolute;
+  right: 95px;
+  bottom: 100px;
+}
+
+@include breakpoint-down (1100) {
+  .hero__wrapper {
+    padding: 60px 60px 457px;
+    text-align: center;
+  }
+  .hero__text {
+    margin: 0 auto 19px;
+  }
+  .hero__box {
+    margin: 0 auto;
+  }
+  .hero__img {
+    left: 50%;
+    bottom: -85px;
+    transform: translateX(-50%);
+  }
+  .hero__wrapper {
+    background-position: right -150px top;
+  }
+}
+@include breakpoint-down (768) {
+  padding-bottom: 60px;
+}
+@include breakpoint-down (600) {
+  .hero__container  {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .hero__wrapper {
+    padding: 80px 20px 451px;
+    border-radius: 0;
+  }
+  .hero__title {
+    font-size: 32px;
+    line-height: 36px;
+  }
+  .hero__text {
+    max-width: 100%;
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 24px;
+  }
+}
+@include breakpoint-down (370) {
+  .hero__wrapper {
+    padding: 40px 24px 451px;
+  }
+  .hero__title {
+    font-size: 28px;
+    line-height: 32px;
+  }
+}

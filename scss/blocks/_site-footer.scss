@@ -1,0 +1,131 @@
+.site-footer {
+  padding-top: 72px;
+  padding-bottom: 72px;
+  background-color: #1D1C1E;
+  margin-top: -1px;
+}
+.site-footer__top {
+  padding-bottom: 40px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar--foter .navbar__link {
+  color: #fff;
+}
+.site-footer__bottom {
+  padding-top: 40px;
+}
+.footer-bottom__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 -20px;
+  flex-wrap: wrap;
+  height: auto;
+}
+.footer-bottom__item {
+  max-width: 350px;
+  margin: 0 20px 40px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.footer-bottom__text {
+  font-size: 16px;
+  line-height: 26px;
+  color: #ffff;
+  font-weight: 700;
+  opacity: 0.5;
+}
+.footer-bottom__address {
+  font-size: 16px;
+  line-height: 26px;
+  font-style: normal;
+  font-weight: 400;
+  color: #fff;
+  opacity: 0.5;
+}
+.footer-bottom__link {
+  display: block;
+  font-size: 16px;
+  line-height: 26px;
+  color: #fff;
+  opacity: 0.5;
+}
+.footer-bottom__social {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  height: 100%;
+  margin-top: auto;
+}
+.social-list__item {
+  margin-right: 16px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.social-list__link {
+  display: inline-block;
+  vertical-align: middle;
+  transition: opacity 0.3s ease;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+.social-list__img {
+  display: inline-block;
+  vertical-align: middle;
+}
+@include breakpoint-down (720) {
+  .navbar--foter {
+    display: block;
+  }
+}
+@include breakpoint-down (674) {
+  .footer-bottom__list {
+    margin: 0;
+    justify-content: space-around;
+  }
+  .footer-bottom__item {
+    margin: 0 40px 40px;
+  }
+  .site-footer__top {
+    flex-direction: column;
+    border-bottom: 0;
+  }
+  .navbar--foter .navbar__list {
+    flex-direction: column;
+    text-align: center;
+  }
+  .navbar--foter .navbar__item {
+    margin-right: 0;
+    margin-top: 32px;
+  }
+  .footer--logo {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 32px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}
+@include breakpoint-down (571) {
+  .footer-bottom__item {
+    text-align: center;
+  }
+}
+@include breakpoint-down (500) {
+  .site-footer {
+    padding-bottom: 64px;
+    padding-top: 64px;
+  }
+}
+@include breakpoint-down (410) {
+  .footer-bottom__item {
+    margin: 0 0 40px;
+  }
+}

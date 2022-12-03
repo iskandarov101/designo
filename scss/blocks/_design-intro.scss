@@ -1,0 +1,30 @@
+.design-intro--wrapper {
+  flex-direction: row;
+  width: 100%;
+  align-items: stretch;
+  padding: 80px 0;
+}
+.design-intro--wrapper .grid__box--app {
+  margin-bottom: 0;
+}
+.design-intro--wrapper .grid__box {
+  width: 49%;
+}
+
+@include breakpoint-down (880) {
+  .design-intro--wrapper {
+    flex-direction: column;
+  }
+  .design-intro--wrapper .grid__box--app {
+  margin-bottom: 24px;
+}
+.design-intro--wrapper .grid__box {
+  width: 100%;
+}
+}
+
+@include breakpoint-down (500) {
+  .design-intro--wrapper {
+    padding: 60px 0;
+  }
+}

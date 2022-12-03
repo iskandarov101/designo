@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>Designo</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container site-header__container">
+      <a href="index.html" class="logo">
+        <img class="logo-img" src="img/logo.svg" alt="Logotip" width="196" height="24">
+      </a>
+      <nav class="site-header__nav navbar">
+        <ul class="navbar__list">
+          <li class="navbar__item">
+            <a href="about.html" class="navbar__link">OUR COMPANY</a>
+          </li>
+          <li class="navbar__item">
+            <a href="location.html" class="navbar__link">LOCATIONS</a>
+          </li>
+          <li class="navbar__item">
+            <a href="contact.html" class="navbar__link">CONTACT</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="menu-burger" type="button"></button>
+    </div>
+  </header>
+  <main class="site-main">
+    <section class="contact">
+      <div class="container contact__container">
+        <div class="contact__wrapper">
+          <div class="contact__box">
+            <h2 class="contact__title">Contact Us</h2>
+            <p class="contact__text">Ready to take it to the next level? Let’s talk about your project or idea and find out how we can help your business
+            grow. If you are looking for unique digital experiences that’s relatable to your users, drop us a line.</p>
+          </div>
+          <form method="POST" action="https://echo.htmlacademy.ru" class="contact__form form">
+            <input required type="text" class="form__input form__input--name" placeholder="Rose Caldwell">
+            <input required pattern="^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$" type="email" class="form__input form__input--email" placeholder="Email Address" aria-label="Email">
+            <!-- <span class="error-massage">Can’t be empty</span> -->
+            <input required type="tel" class="form__input form__input--phone" placeholder="Phone">
+            <textarea class="form__message" placeholder="Your Message"></textarea>
+            <button class="form__btn" type="submit">SUBMIT</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="country country--contact">
+      <div class="container">
+        <ul class="country__list">
+          <li class="country__item">
+            <div class="country__box">
+              <h3 class="country__title">CANADA</h3>
+              <a href="#" class="country__link">SEE LOCATION</a>
+            </div>
+          </li>
+          <li class="country__item">
+            <div class="country__box">
+              <h3 class="country__title">AUSTRALIA</h3>
+              <a href="#" class="country__link">SEE LOCATION</a>
+            </div>
+          </li>
+          <li class="country__item">
+            <div class="country__box">
+              <h3 class="country__title">UNITED KINGDOM</h3>
+              <a href="#" class="country__link">SEE LOCATION</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__top">
+        <a href="index.html" class="logo footer--logo">
+          <img class="logo-img" src="img/footer-logo.svg" alt="Logotip" width="196" height="24">
+        </a>
+        <nav class="site-header__nav navbar navbar--foter">
+          <ul class="navbar__list">
+            <li class="navbar__item">
+              <a href="about.html" class="navbar__link">OUR COMPANY</a>
+            </li>
+            <li class="navbar__item">
+              <a href="location.html" class="navbar__link">LOCATIONS</a>
+            </li>
+            <li class="navbar__item">
+              <a href="contact.html" class="navbar__link">CONTACT</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="site-footer__bottom footer-bottom">
+        <ul class="footer-bottom__list">
+          <li class="footer-bottom__item">
+            <p class="footer-bottom__text">Designo Central Office</p>
+            <address class="footer-bottom__address">3886 Wellington Street <br> Toronto, Ontario M9C 3J5</address>
+          </li>
+          <li class="footer-bottom__item">
+            <p class="footer-bottom__text">Contact Us (Central Office)</p>
+            <a href="tel:+12538638967" class="footer-bottom__link">P : +1 253-863-8967</a>
+            <a href="mailto:contact@designo.com" class="footer-bottom__link">M : contact@designo.co</a>
+          </li>
+          <li class="footer-bottom__item">
+            <ul class="footer-bottom__social social-list">
+              <li class="social-list__item">
+                <a href="#" class="social-list__link">
+                  <img src="img/facebook-icon.png" alt="" class="social-list__img">
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a href="#" class="social-list__link">
+                  <img src="img/youtube-icon.png" alt="" class="social-list__img">
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a href="#" class="social-list__link">
+                  <img src="img/twitter-icon.png" alt="" class="social-list__img">
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a href="#" class="social-list__link">
+                  <img src="img/pixel-icon.png" alt="" class="social-list__img">
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a href="#" class="social-list__link">
+                  <img src="img/instagram-icon.png" alt="" class="social-list__img">
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script>
+    var elModalToggler = document.querySelector('.menu-burger');
+    var elModal = document.querySelector('.site-header');
+    var elModalClose = document.querySelector('.site-header--open');
+
+    elModalToggler.addEventListener('click', function () {
+      elModal.classList.toggle('site-header--open');
+    });
+  </script>
+
+</body>
+
+</html>
